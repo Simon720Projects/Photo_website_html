@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-gradient-to-t from-gray-950 to-gray-700 min-h-screen">
+    <header>
+      <nav
+        class="top-0 fixed p-4 min-w-full h-20 bg-gradient-to-t from-gray-700/70 flex flex-wrap justify-between"
+      >
+        <div class="bg-red-500 flex">
+          <a href="#"><img src="https://fakeimg.pl/100x50/" /></a>
+        </div>
+        <ul
+          class="text-cyan-400 font-bold justify-around items-center w-6/12 flex flex-wrap"
+        >
+          <li class="hover:text-cyan-200 ease-out duration-300">
+            <a href="#">Marketplace</a>
+          </li>
+          <li class="hover:text-cyan-200 ease-out duration-300">
+            <a href="#">Sell Photo</a>
+          </li>
+          <li class="hover:text-cyan-200 ease-out duration-300">
+            <a href="#">Contact Us</a>
+          </li>
+        </ul>
+        <ul
+          class="text-gray-700 rounded-2xl justify-center w-20 font-bold mr-12 items-center flex flex-wrap bg-cyan-400"
+        >
+          <li><a href="#">Sign in</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div class="mt-20 py-10">
+          <div class="text-center">
+            <h1 class="text-5xl font-bold text-cyan-400">Payment</h1>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="py-10 p-96">
+          <div class="rounded-xl bg-white pt-10 shadow">
+            <div class="text-center font-bold text-3xl text-gray-800">
+              <h2>Payment Methods</h2>
+            </div>
+            <div class="flex flex-wrap justify-center p-10 gap-4">
+              <a href="#">
+                <div class="block">
+                  <div
+                    class="rounded-md bg-slate-400/60 hover:bg-slate-500/60 transition p-20"
+                  >
+                    <i class="text-5xl fa-solid fa-credit-card"></i>
+                  </div>
+                  <div class="font-bold text-gray-800 pt-2 text-center">
+                    <h3>Credit Card</h3>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#">
+                <div class="block">
+                  <div
+                    class="rounded-md bg-slate-400/60 hover:bg-slate-500/60 transition p-20"
+                  >
+                    <i class="text-5xl fa-brands fa-cc-visa"></i>
+                  </div>
+                  <div class="font-bold text-gray-800 pt-2 text-center">
+                    <h3>Visa</h3>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#">
+                <div class="block">
+                  <div
+                    class="rounded-md bg-slate-400/60 hover:bg-slate-500/60 transition p-20"
+                  >
+                    <i class="text-5xl fa-brands fa-paypal"></i>
+                  </div>
+                  <div class="font-bold text-gray-800 pt-2 text-center">
+                    <h3>Paypal</h3>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#">
+                <div class="block">
+                  <div
+                    class="rounded-md bg-slate-400/60 hover:bg-slate-500/60 transition p-20"
+                  >
+                    <i class="text-5xl fa-solid fa-building-columns"></i>
+                  </div>
+                  <div class="font-bold text-gray-800 pt-2 text-center">
+                    <h3>Net Banking</h3>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="py-5 p-96 pb-20">
+          <div class="rounded-xl bg-white pt-10 shadow">
+            <form class="pb-10" action="">
+              <div class="text-center font-bold text-3xl text-gray-800">
+                <h2>Payment Information</h2>
+              </div>
+              <div class="pt-5 flex flex-wrap justify-center items-center">
+                <div class="w-9/12">
+                  <label
+                    class="text-gray-900 text-sm mb-2 ml-1 block"
+                    for="email"
+                    >Email Address</label
+                  >
+                  <input
+                    class="rounded-2xl w-full"
+                    type="email"
+                    name="email"
+                    placeholder="you@company.com"
+                    id="email"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="pt-5 flex flex-wrap justify-center items-center">
+                <div class="w-9/12 flex flex-wrap justify-between">
+                  <div class="w-6/12">
+                    <label
+                      class="text-gray-900 text-sm mb-2 ml-1 block"
+                      for="fname"
+                      >First Name</label
+                    >
+                    <input
+                      class="rounded-2xl w-full"
+                      type="text"
+                      name="firstname"
+                      placeholder="First Name"
+                      id="fname"
+                      required
+                    />
+                  </div>
+
+                  <div class="w-5/12">
+                    <label
+                      class="text-gray-900 text-sm mb-2 ml-1 block"
+                      for="lname"
+                      >Last Name</label
+                    >
+                    <input
+                      class="rounded-2xl w-full"
+                      type="text"
+                      name="lastname"
+                      placeholder="Last Name"
+                      id="lname"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="pt-10 text-center font-bold text-3xl text-gray-800">
+                <h2>Credit Card Info</h2>
+              </div>
+
+              <div class="pt-5 flex flex-wrap justify-center items-center">
+                <div class="w-9/12">
+                  <label
+                    class="text-gray-900 text-sm mb-2 ml-1 block"
+                    for="cardname"
+                    >Name On Card</label
+                  >
+                  <input
+                    class="rounded-2xl w-full"
+                    type="text"
+                    name="cardname"
+                    id="cardname"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="pt-5 flex flex-wrap justify-center items-center">
+                <div class="w-9/12">
+                  <label
+                    class="text-gray-900 text-sm mb-2 ml-1 block"
+                    for="cardno"
+                    >Card Number</label
+                  >
+                  <div class="relative">
+                    <input
+                      class="rounded-2xl w-full block w-full box-border"
+                      type="text"
+                      placeholder="0000-0000 0000-0000"
+                      name="cardno"
+                      id="cardno"
+                      required
+                    />
+                    <img
+                      class="absolute top-1 right-5 w-12 h-8"
+                      src="https://www.visa.com.au/dam/VCOM/regional/ve/romania/blogs/hero-image/visa-logo-800x450.jpg"
+                      width="25"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="pt-5 flex flex-wrap justify-center items-center">
+                <div class="w-9/12 flex flex-wrap justify-between">
+                  <div class="w-6/12 flex flex-wrap gap-4">
+                    <div class="w-3/12">
+                      <label
+                        class="text-gray-900 text-sm mb-2 ml-1 block"
+                        for="exp"
+                        >Expiration</label
+                      >
+                      <input
+                        class="rounded-2xl w-full"
+                        type="number"
+                        min="0"
+                        max="12"
+                        name="exp"
+                        id="exp"
+                        required
+                      />
+                    </div>
+                    <div class="w-3/12 pt-7">
+                      <input
+                        class="rounded-2xl w-full"
+                        type="number"
+                        min="1950"
+                        max="2010"
+                        name="exp"
+                        id="exp"
+                        required
+                      />
+                    </div>
+                  </div>
+
+                  <div class="w-5/12">
+                    <label
+                      class="text-gray-900 text-sm mb-2 ml-1 block"
+                      for="cvv"
+                      >CVV Number</label
+                    >
+                    <input
+                      class="rounded-2xl w-full"
+                      type="text"
+                      name="cvv"
+                      placeholder="xxx"
+                      id="cvv"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="pt-8 flex flex-wrap justify-left pl-32">
+                <div class="flex items-center">
+                  <input
+                    id="remember_me"
+                    name="remember_me"
+                    required
+                    type="checkbox"
+                    class="h-4 w-4 shrink-0 text-cyan-600 focus:ring-cyan-500 border-gray-300 rounded"
+                  />
+                  <label
+                    for="remember_me"
+                    class="ml-3 block text-sm text-gray-900"
+                  >
+                    By checking this box, I agree to the Terms & Conditions &
+                    Privacy Policy.
+                  </label>
+                </div>
+              </div>
+
+              <div class="pt-8 flex flex-wrap justify-center items-center">
+                <div class="w-9/12">
+                  <button
+                    type="submit"
+                    class="text-center rounded-2xl w-full p-2 text-md font-bold text-white bg-cyan-500 hover:bg-cyan-600 transition"
+                  >
+                    Submit
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="bottom-0 min-w-full bottom-0 bg-gray-700/30 text-cyan-600">
+        <div class="justify-center w-screen">
+          <div class="w-50 py-7 px-20 justify-around flex flex-wrap">
+            <div class="text-ml font-bold flex flex-wrap text-center">
+              <ul>
+                <li class="py-1"><a href="#">Marketplace</a></li>
+                <li class="py-1"><a href="#">Sell Photo</a></li>
+                <li class="py-1"><a href="#">Contant Us</a></li>
+              </ul>
+            </div>
+            <div class="flex flex-wrap items-center justify-center">
+              <div class="w-30 text-center text-2xl">
+                <a href="#">
+                  <i class="px-2 fa-brands fa-instagram"></i>
+                </a>
+                <a href="#">
+                  <i class="px-2 fa-brands fa-facebook"></i>
+                </a>
+                <a href="#">
+                  <i class="px-2 fa-brands fa-linkedin"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="py-4 text-xs text-center">
+          <p>&copy 2025 PHOTOSELL INC, ALL RIGHTS RESERVED</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </body>
+</html>
