@@ -68,7 +68,7 @@
       <section>
         <form class="flex flex-wrap justify-center p-10" action="">
           <div>
-            <input type="file" class="hidden" id="file-input" />
+            <input type="file" class="hidden" id="file-input" required />
 
             <label
               for="file-input"
@@ -92,6 +92,7 @@
                   class="w-full rounded-md"
                   name="photo_name"
                   id="photo_name"
+                  required
                 />
               </div>
 
@@ -109,13 +110,12 @@
               </div>
 
               <div class="py-10 flex flex-wrap justify-center items-center">
-                <a
-                  href="#"
+                <button
                   type="submit"
                   class="text-xl text-center rounded-xl w-full p-2 text-md font-bold text-white bg-cyan-700 hover:bg-cyan-600 transition"
                 >
                   Upload
-                </a>
+                </button>
               </div>
             </div>
           </div>
